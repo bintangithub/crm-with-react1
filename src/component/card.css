@@ -1,6 +1,18 @@
 /* 
     CARD
 */
+.card{
+    margin-bottom: 22px;
+}
+
+.dashboard .card span{
+    color: #a9a5a5;
+    font-size: 15px;
+}
+
+.dashboard .card h5{
+    font-weight: 700;
+}
 
 .dashboard .info-card{
     padding-bottom: 10px;
@@ -37,3 +49,4 @@
     color: #ff771d;
     background-color: #ffecdf;
 }
+
