@@ -1,6 +1,14 @@
-.container{
+.toggle-sidebar .container-chat{
     position: absolute;
-    width: 1120px;
-    top: 20px;
-    right: 5px;
+    width: 76%;
+    top: 60px;
+    right: 20px;
+}
+
+.container-chat{
+    position: absolute;
+    width: 56%;
+    top: 60px;
+    right: 20px;
+    transition: all 0.3s;
 }

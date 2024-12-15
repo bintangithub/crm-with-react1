@@ -1,14 +1,20 @@
 .sidebar-chat{
     position: fixed;
     top: 60px;
-    left: 0;
+    left: 300px;
     bottom: 0;
+    padding-left: 0px;
+    margin-left: 0px;
     width: 300px;
     z-index: 800;
     transition: all 0.3s;
     padding: 20px;
     box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
     background-color: #ffffff;
+}
+
+.toggle-sidebar .sidebar-chat{
+    left: 0;
 }
 
 .sidebar-chat i{

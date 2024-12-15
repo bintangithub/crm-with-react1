@@ -43,7 +43,7 @@
 
 @media (max-width:1199px){
     .toggle-sidebar .sidebar{
-        left: 0px;
+        left: -300px;
     }
 }
 
