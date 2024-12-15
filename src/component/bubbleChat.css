@@ -12,3 +12,29 @@
     right: 20px;
     transition: all 0.3s;
 }
+
+.container-chat.container .full-message.card{
+    height: 600px;
+    overflow-y: auto;
+}
+
+@media (min-width:1500px){
+    .toggle-sidebar .container-chat{
+        position: absolute;
+        width: 87%;
+        margin: 0 0 0 0;
+    }
+    
+    .container-chat .full-message.card{
+        height: 1000px;
+        overflow-y: auto;
+    }
+
+    .container-chat{
+        position: absolute;
+        width: 75%;
+        top: 60px;
+        right: 20px;
+        transition: all 0.3s;
+    }
+}

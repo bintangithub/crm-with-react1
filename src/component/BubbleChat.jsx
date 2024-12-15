@@ -43,30 +43,25 @@ const BubbleChat = () => {
 
   return ( 
     <>
-      <div className="row">
-        <div className="col-2"></div>
-        <div className="container-chat col-10">
-        {/* <div className="container mt-5"> */}
-            <div className="card p-3" style={{ height: "500px", overflowY: "auto" }}>
-              {messages.map((msg, index) => (
-                <ChatBubble key={index} message={msg.text} isSender={msg.isSender} />
-              ))}
-            </div>
-            <div className="input-group mt-3">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Type a message..."
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-                onKeyDown={(e) => e.key === "Enter" && handleSendMessage()}
-              />
-              <button className="btn btn-primary" onClick={handleSendMessage}>
-                Send
-              </button>
-            </div>
-          {/* </div> */}
-        </div>
+      <div className="container-chat container">
+          <div className="full-message card p-3">
+            {messages.map((msg, index) => (
+              <ChatBubble key={index} message={msg.text} isSender={msg.isSender} />
+            ))}
+          </div>
+          <div className="input-group mt-3">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Type a message..."
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && handleSendMessage()}
+            />
+            <button className="btn btn-primary" onClick={handleSendMessage}>
+              Send
+            </button>
+          </div>
       </div>
     </>
   );
